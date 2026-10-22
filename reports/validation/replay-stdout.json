@@ -1,0 +1,143 @@
+{
+  "input_truncated": false,
+  "schema_version": 1,
+  "snapshot": {
+    "active_hosts": 8,
+    "active_pairs": 45,
+    "alerts": [
+      {
+        "baseline": null,
+        "caveat": "Administration, service discovery and authorized scanning can match.",
+        "destination": null,
+        "detector": "scan",
+        "explanation": "Many distinct targets within one event-time window.",
+        "id": "1767225720000:192.0.2.10:scan",
+        "name": "Target diversity",
+        "observed": 12.0,
+        "severity": "medium",
+        "source": "192.0.2.10",
+        "statistic": "distinct destination ports (capped lower bound)",
+        "supporting_events": 12,
+        "threshold": 12.0,
+        "timestamp_ms": 1767225722100,
+        "window_end_ms": 1767225780000,
+        "window_start_ms": 1767225720000
+      },
+      {
+        "baseline": 5.0,
+        "caveat": "Counts are flow records, not necessarily new connections. Workload bursts and partial reference windows can match.",
+        "destination": null,
+        "detector": "rate",
+        "explanation": "Current count crossed the previous contiguous window count × ratio and minimum count.",
+        "id": "1767225720000:192.0.2.20:rate",
+        "name": "Event-rate increase",
+        "observed": 30.0,
+        "severity": "high",
+        "source": "192.0.2.20",
+        "statistic": "current window event count",
+        "supporting_events": 30,
+        "threshold": 30.0,
+        "timestamp_ms": 1767225729700,
+        "window_end_ms": 1767225780000,
+        "window_start_ms": 1767225720000
+      },
+      {
+        "baseline": null,
+        "caveat": "Backup, replication and downloads can match; this does not confirm exfiltration. Direction is supplied by the input.",
+        "destination": null,
+        "detector": "transfer",
+        "explanation": "Outbound aggregate bytes crossed the configured volume threshold.",
+        "id": "1767225720000:192.0.2.30:transfer",
+        "name": "Outbound volume",
+        "observed": 6000000.0,
+        "severity": "high",
+        "source": "192.0.2.30",
+        "statistic": "outbound bytes",
+        "supporting_events": 3,
+        "threshold": 5000000.0,
+        "timestamp_ms": 1767225739000,
+        "window_end_ms": 1767225780000,
+        "window_start_ms": 1767225720000
+      },
+      {
+        "baseline": 5000.0,
+        "caveat": "Scheduled jobs, health checks and polling can be periodic. This does not verify command-and-control.",
+        "destination": "198.51.100.1",
+        "detector": "beacon",
+        "explanation": "Low population CV across recent interarrival intervals; CV must be at or below threshold.",
+        "id": "1767225720000:192.0.2.40:beacon:198.51.100.1:443:Tcp",
+        "name": "Periodic communication",
+        "observed": 0.0,
+        "severity": "medium",
+        "source": "192.0.2.40",
+        "statistic": "interarrival coefficient of variation",
+        "supporting_events": 6,
+        "threshold": 0.1,
+        "timestamp_ms": 1767225746000,
+        "window_end_ms": 1767225780000,
+        "window_start_ms": 1767225720000
+      }
+    ],
+    "config": {
+      "beacon_cv": 0.1,
+      "beacon_intervals": 5,
+      "beacon_min_interval_ms": 1000,
+      "max_alerts": 256,
+      "max_hosts": 256,
+      "max_pairs_per_host": 32,
+      "max_recent_ids": 32768,
+      "rate_min": 30,
+      "rate_ratio": 4.0,
+      "retention_windows": 2,
+      "scan_hosts": 10,
+      "scan_ports": 12,
+      "transfer_bytes": 5000000,
+      "window_ms": 60000
+    },
+    "metrics": {
+      "accepted": 822,
+      "alerts_evicted": 0,
+      "alerts_total": 4,
+      "by_detector": {
+        "beacon": 1,
+        "rate": 1,
+        "scan": 1,
+        "transfer": 1
+      },
+      "bytes": 10336816,
+      "capacity_dropped": 0,
+      "duplicates": 0,
+      "evicted_hosts": 0,
+      "evicted_ids": 0,
+      "invalid": 0,
+      "late": 0,
+      "pair_observations_dropped": 0,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "received": 822
+    },
+    "recent_ids": 822,
+    "timeline": [
+      {
+        "alerts": 0,
+        "bytes": 779064,
+        "events": 245,
+        "start_ms": 1767225600000
+      },
+      {
+        "alerts": 0,
+        "bytes": 744456,
+        "events": 245,
+        "start_ms": 1767225660000
+      },
+      {
+        "alerts": 4,
+        "bytes": 8813296,
+        "events": 332,
+        "start_ms": 1767225720000
+      }
+    ],
+    "watermark_ms": 1767225779685
+  }
+}

@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> sentinelflow-dashboard@0.1.0 format
+> prettier --write src tests *.ts *.json index.html
+
+src/api.ts 385ms (unchanged)
+src/App.tsx 370ms (unchanged)
+src/main.tsx 17ms (unchanged)
+src/style.css 250ms
+src/types.ts 37ms (unchanged)
+tests/e2e/workflow.spec.ts 87ms (unchanged)
+tests/ui.test.tsx 22ms (unchanged)
+playwright.config.ts 5ms (unchanged)
+vite.config.ts 7ms (unchanged)
+vitest.config.ts 4ms (unchanged)
+package-lock.json 87ms (unchanged)
+package.json 2ms (unchanged)
+tsconfig.json 7ms (unchanged)
+index.html 54ms (unchanged)

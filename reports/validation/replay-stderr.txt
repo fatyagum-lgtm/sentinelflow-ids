@@ -1,0 +1,5 @@
+Received 822, accepted 822, invalid 0, late 0, duplicate 0, capacity-dropped 0; alerts 4 (retained 4).
+scan 192.0.2.10: distinct destination ports (capped lower bound) = 12.000, threshold 12.000; Administration, service discovery and authorized scanning can match.
+rate 192.0.2.20: current window event count = 30.000, threshold 30.000; Counts are flow records, not necessarily new connections. Workload bursts and partial reference windows can match.
+transfer 192.0.2.30: outbound bytes = 6000000.000, threshold 5000000.000; Backup, replication and downloads can match; this does not confirm exfiltration. Direction is supplied by the input.
+beacon 192.0.2.40: interarrival coefficient of variation = 0.000, threshold 0.100; Scheduled jobs, health checks and polling can be periodic. This does not verify command-and-control.

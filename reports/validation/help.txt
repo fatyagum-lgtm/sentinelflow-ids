@@ -1,0 +1,23 @@
+SentinelFlow IDS — streaming anomaly laboratory
+
+USAGE
+  sentinelflow-ids generate <scenario> <seed> <new-directory>
+  sentinelflow-ids replay <events.jsonl> [options]
+  sentinelflow-ids --help
+
+SCENARIOS
+  background | scan | spike | transfer | beacon | scheduled | mixed
+
+REPLAY OPTIONS
+  --config <file.json>   Partial Config JSON; unknown fields rejected
+  --max-events <n>       Record limit, including malformed lines (default 1000000)
+  --line-bytes <n>       Maximum record bytes, including newline (256..65536; default 4096)
+  --speed <factor>       0 = fastest; 0.1..10000 = timed replay (default 0)
+  --output <new.json>    Save snapshot without overwriting an existing file
+
+Replay prints a JSON snapshot to stdout and a human summary to stderr.
+The ordered-input policy drops older timestamps and recently cached IDs.
+Timed replay caps each inter-event wait at 10 seconds; no network traffic is sent.
+Exit codes: 0 = processed without drops; 2 = usage/I/O/configuration error;
+3 = report produced with rejected records, exhausted record limit, or state loss.
+Server: serve [port] (default 8787). Workload: workload <count> <seed> <new.jsonl>. Research: cargo run --release --bin research -- <new-directory>.

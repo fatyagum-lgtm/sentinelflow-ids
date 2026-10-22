@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "rust_tests": 29,
+  "frontend_tests": 6,
+  "browser_tests": 2,
+  "clean_archive_browser_tests": 2,
+  "source_files_matched": 25,
+  "fmt": "passed",
+  "clippy": "passed",
+  "frontend_format": "passed",
+  "typescript": "passed",
+  "release_build": "passed",
+  "archive_build": "passed with shared Cargo cache",
+  "archive_npm_ci": "passed",
+  "archive_cli_demo": "822 accepted; 4 alerts",
+  "hosted_ci": "not run",
+  "platform": "Linux",
+  "browser": "Chromium via Playwright 1.56.1"
+}

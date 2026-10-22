@@ -1,0 +1,2 @@
+   Compiling sentinelflow-ids v0.1.0 (/workspace/scratch/dca4e23809c7/sentinelflow-ids)
+    Finished `release` profile [optimized] target(s) in 4.41s

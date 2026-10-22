@@ -1,0 +1,124 @@
+   Compiling itoa v1.0.18
+   Compiling bytes v1.12.1
+   Compiling pin-project-lite v0.2.17
+   Compiling futures-core v0.3.34
+   Compiling once_cell v1.21.4
+   Compiling tower-service v0.3.3
+   Compiling libc v0.2.191
+   Compiling serde_core v1.0.229
+   Compiling httpdate v1.0.3
+   Compiling unicase v2.10.0
+   Compiling slab v0.4.12
+   Compiling futures-task v0.3.34
+   Compiling tracing-core v0.1.36
+   Compiling log v0.4.34
+   Compiling tower-layer v0.3.3
+   Compiling mime v0.3.17
+   Compiling percent-encoding v2.3.2
+   Compiling futures-util v0.3.34
+   Compiling mime_guess v2.0.5
+   Compiling http v1.5.0
+   Compiling httparse v1.10.1
+   Compiling smallvec v1.16.3
+   Compiling atomic-waker v1.1.2
+   Compiling sync_wrapper v1.0.2
+   Compiling tracing v0.1.44
+   Compiling form_urlencoded v1.2.2
+   Compiling zmij v1.0.23
+   Compiling ryu v1.0.23
+   Compiling memchr v2.8.3
+   Compiling futures-sink v0.3.34
+   Compiling mio v1.2.4
+   Compiling socket2 v0.6.5
+   Compiling bitflags v2.13.2
+   Compiling http-body v1.1.0
+   Compiling http-body-util v0.1.5
+   Compiling http-range-header v0.4.2
+   Compiling tokio v1.53.3
+   Compiling serde v1.0.229
+   Compiling serde_json v1.0.154
+   Compiling axum-core v0.5.6
+   Compiling serde_path_to_error v0.1.20
+   Compiling matchit v0.8.4
+   Compiling serde_urlencoded v0.7.1
+   Compiling hyper v1.12.0
+   Compiling tokio-util v0.7.20
+   Compiling tower v0.5.3
+   Compiling tower-http v0.6.11
+   Compiling hyper-util v0.1.21
+   Compiling axum v0.8.9
+   Compiling sentinelflow-ids v0.1.0 (/workspace/scratch/dca4e23809c7/sentinelflow-ids)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 32.90s
+     Running unittests src/lib.rs (target/debug/deps/sentinelflow_ids-ab897ce206df9cfd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/research.rs (target/debug/deps/research-9c482efa38a59b98)
+
+running 3 tests
+test tests::undefined_ratios_and_even_median ... ok
+test tests::resilience_checks_pass ... ok
+test tests::scheduled_false_positives_are_preserved ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running unittests src/main.rs (target/debug/deps/sentinelflow_ids-52987eb355cfce47)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/api.rs (target/debug/deps/api-e6589b2e6ed2ce06)
+
+running 4 tests
+test rejects_unsafe_requests ... ok
+test stop_and_busy_are_real ... ok
+test replay_uses_real_engine_and_reports ... ok
+test slow_queue_and_request_caps ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+
+     Running tests/cli.rs (target/debug/deps/cli-7d29dbed3892e761)
+
+running 2 tests
+test invalid_record_produces_visible_partial_report ... ok
+Generated 822 synthetic events; truth saved separately.
+Error: Cannot create new output directory: File exists (os error 17)
+test generated_demo_and_no_overwrite ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/core.rs (target/debug/deps/core-3f33719edf71aefe)
+
+running 20 tests
+test duplicates_late_and_invalid_are_visible_without_counting_evidence ... ok
+test beacon_requires_enough_intervals_and_low_cv ... ok
+test alerts_include_explanation_evidence_window_and_stable_id ... ok
+test equal_timestamps_do_not_create_nan_beacon_results ... ok
+test empty_stream_has_no_alerts_or_watermark ... ok
+test half_open_windows_reset_detector_state ... ok
+test host_diversity_also_triggers_scan ... ok
+test host_retention_frees_capacity_without_unbounded_growth ... ok
+test missing_window_disables_rate_reference ... ok
+test invalid_config_is_rejected_before_engine_creation ... ok
+test transfer_counts_only_outbound_bytes_and_evidence ... ok
+test schema_rejects_unknown_fields_wrong_types_and_bad_addresses ... ok
+test rate_requires_contiguous_nonzero_baseline_and_minimum ... ok
+test malformed_and_oversized_lines_recover_and_final_newline_is_optional ... ok
+test underlying_read_failure_is_an_error_not_an_empty_stream ... ok
+test validation_enforces_numeric_and_protocol_bounds ... ok
+test scan_counts_distinct_targets_and_fires_once_per_window ... ok
+test pair_id_alert_and_timeline_caps_are_enforced ... ok
+test scheduled_benign_traffic_exposes_beacon_false_positive ... ok
+test replay_is_deterministic_and_truth_is_separate ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+   Doc-tests sentinelflow_ids
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

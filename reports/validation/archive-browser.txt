@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> sentinelflow-dashboard@0.1.0 e2e
+> playwright test
+
+[2m[WebServer] [22mSentinelFlow listening on http://127.0.0.1:8787
+
+Running 2 tests using 1 worker
+
+(node:36) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/workflow.spec.ts:3:1 › actual replay, evidence, research, export and mobile layout (26.8s)
+  ✓  2 tests/e2e/workflow.spec.ts:95:1 › invalid seed and cancellation (1.4s)
+
+  2 passed (33.3s)

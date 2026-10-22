@@ -1,0 +1,27 @@
+{
+  "scenario": "mixed",
+  "seed": 42,
+  "expected": [
+    {
+      "detector": "scan",
+      "source": "192.0.2.10",
+      "onset_ms": 1767225721000
+    },
+    {
+      "detector": "rate",
+      "source": "192.0.2.20",
+      "onset_ms": 1767225721000
+    },
+    {
+      "detector": "transfer",
+      "source": "192.0.2.30",
+      "onset_ms": 1767225726000
+    },
+    {
+      "detector": "beacon",
+      "source": "192.0.2.40",
+      "onset_ms": 1767225721000
+    }
+  ],
+  "note": "Synthetic scenario labels, not verified intrusions. Scheduled polling intentionally resembles beaconing. Background may trigger false positives."
+}

@@ -1,0 +1,3340 @@
+{
+  "benchmarks": [
+    {
+      "events": 10000,
+      "median_events_per_second": 810263.707616017,
+      "trials": [
+        {
+          "accepted": 10000,
+          "events": 10000,
+          "events_per_second": 817780.6447349892,
+          "latency_p50_ns": 376,
+          "latency_p95_ns": 1208,
+          "latency_samples": 100,
+          "peak_hosts": 128,
+          "peak_ids": 10000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 3660,
+          "seconds": 0.012228218
+        },
+        {
+          "accepted": 10000,
+          "events": 10000,
+          "events_per_second": 810263.707616017,
+          "latency_p50_ns": 391,
+          "latency_p95_ns": 1210,
+          "latency_samples": 100,
+          "peak_hosts": 128,
+          "peak_ids": 10000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 3708,
+          "seconds": 0.012341661
+        },
+        {
+          "accepted": 10000,
+          "events": 10000,
+          "events_per_second": 620765.5255630623,
+          "latency_p50_ns": 395,
+          "latency_p95_ns": 1208,
+          "latency_samples": 100,
+          "peak_hosts": 128,
+          "peak_ids": 10000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 3644,
+          "seconds": 0.016109142
+        }
+      ]
+    },
+    {
+      "events": 100000,
+      "median_events_per_second": 785760.8381151399,
+      "trials": [
+        {
+          "accepted": 100000,
+          "events": 100000,
+          "events_per_second": 776743.9204000909,
+          "latency_p50_ns": 390,
+          "latency_p95_ns": 818,
+          "latency_samples": 1000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 5188,
+          "seconds": 0.128742559
+        },
+        {
+          "accepted": 100000,
+          "events": 100000,
+          "events_per_second": 785760.8381151399,
+          "latency_p50_ns": 403,
+          "latency_p95_ns": 1098,
+          "latency_samples": 1000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 5188,
+          "seconds": 0.127265187
+        },
+        {
+          "accepted": 100000,
+          "events": 100000,
+          "events_per_second": 845219.007274893,
+          "latency_p50_ns": 389,
+          "latency_p95_ns": 743,
+          "latency_samples": 1000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 5240,
+          "seconds": 0.118312531
+        }
+      ]
+    },
+    {
+      "events": 500000,
+      "median_events_per_second": 573924.8019298272,
+      "trials": [
+        {
+          "accepted": 500000,
+          "events": 500000,
+          "events_per_second": 573924.8019298272,
+          "latency_p50_ns": 442,
+          "latency_p95_ns": 1164,
+          "latency_samples": 5000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 7064,
+          "seconds": 0.871194272
+        },
+        {
+          "accepted": 500000,
+          "events": 500000,
+          "events_per_second": 526000.9336200971,
+          "latency_p50_ns": 439,
+          "latency_p95_ns": 1114,
+          "latency_samples": 5000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 7176,
+          "seconds": 0.950568655
+        },
+        {
+          "accepted": 500000,
+          "events": 500000,
+          "events_per_second": 619968.316990336,
+          "latency_p50_ns": 441,
+          "latency_p95_ns": 1114,
+          "latency_samples": 5000,
+          "peak_hosts": 128,
+          "peak_ids": 18000,
+          "peak_pairs": 128,
+          "rss_peak_kib": 7060,
+          "seconds": 0.806492826
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "build_profile": "release",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "host_condition": "shared container; no CPU isolation or cache control",
+    "logical_cpus": 8,
+    "os": "Linux 6.18.55 x86_64 GNU/Linux",
+    "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)"
+  },
+  "generated_unix_ms": 1792297972991,
+  "protocol": {
+    "delay": "Event-time median among detected patterns only; misses excluded.",
+    "latency": "Every 100th process call; empirical p50/p95 including timer overhead and deterministic sampling bias.",
+    "memory": "Linux VmHWM KiB per process including warmup/runtime/allocator/samples; null when unavailable.",
+    "scope": "Synthetic-scenario evaluation, not real-world intrusion-detection accuracy.",
+    "thresholds": "Bundled profiles, not single-variable causal experiment.",
+    "throughput": "Generator + engine, 3 fresh processes per size, 5000 warmup excluded; no parsing/disk/API/capture.",
+    "unit": "scenario × seed × source × detector; any alert predicts positive; repeats collapse. Seven scenarios, five seeds. No held-out corpus.",
+    "windows": "Window duration varies; retention remains two windows. State peaks are counts, not bytes."
+  },
+  "quality": {
+    "adaptive_rate_alert_windows": 10,
+    "cases": [
+      {
+        "alerts": 0,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "background",
+        "seed": 7,
+        "tn": 16,
+        "tp": 0
+      },
+      {
+        "alerts": 0,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "background",
+        "seed": 19,
+        "tn": 16,
+        "tp": 0
+      },
+      {
+        "alerts": 0,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "background",
+        "seed": 42,
+        "tn": 16,
+        "tp": 0
+      },
+      {
+        "alerts": 0,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "background",
+        "seed": 73,
+        "tn": 16,
+        "tp": 0
+      },
+      {
+        "alerts": 0,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "background",
+        "seed": 101,
+        "tn": 16,
+        "tp": 0
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          1100
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "scan",
+        "seed": 7,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          1100
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "scan",
+        "seed": 19,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          1100
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "scan",
+        "seed": 42,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          1100
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "scan",
+        "seed": 73,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          1100
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "scan",
+        "seed": 101,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          8700
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "spike",
+        "seed": 7,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          8700
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "spike",
+        "seed": 19,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          8700
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "spike",
+        "seed": 42,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          8700
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "spike",
+        "seed": 73,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          8700
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "spike",
+        "seed": 101,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          13000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "transfer",
+        "seed": 7,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          13000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "transfer",
+        "seed": 19,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          13000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "transfer",
+        "seed": 42,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          13000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "transfer",
+        "seed": 73,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          13000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "transfer",
+        "seed": 101,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "beacon",
+        "seed": 7,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "beacon",
+        "seed": 19,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "beacon",
+        "seed": 42,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "beacon",
+        "seed": 73,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "beacon",
+        "seed": 101,
+        "tn": 19,
+        "tp": 1
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 1,
+        "scenario": "scheduled",
+        "seed": 7,
+        "tn": 19,
+        "tp": 0
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 1,
+        "scenario": "scheduled",
+        "seed": 19,
+        "tn": 19,
+        "tp": 0
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 1,
+        "scenario": "scheduled",
+        "seed": 42,
+        "tn": 19,
+        "tp": 0
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 1,
+        "scenario": "scheduled",
+        "seed": 73,
+        "tn": 19,
+        "tp": 0
+      },
+      {
+        "alerts": 1,
+        "delays_ms": [],
+        "fn": 0,
+        "fp": 1,
+        "scenario": "scheduled",
+        "seed": 101,
+        "tn": 19,
+        "tp": 0
+      },
+      {
+        "alerts": 4,
+        "delays_ms": [
+          1100,
+          8700,
+          13000,
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "mixed",
+        "seed": 7,
+        "tn": 28,
+        "tp": 4
+      },
+      {
+        "alerts": 4,
+        "delays_ms": [
+          1100,
+          8700,
+          13000,
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "mixed",
+        "seed": 19,
+        "tn": 28,
+        "tp": 4
+      },
+      {
+        "alerts": 4,
+        "delays_ms": [
+          1100,
+          8700,
+          13000,
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "mixed",
+        "seed": 42,
+        "tn": 28,
+        "tp": 4
+      },
+      {
+        "alerts": 4,
+        "delays_ms": [
+          1100,
+          8700,
+          13000,
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "mixed",
+        "seed": 73,
+        "tn": 28,
+        "tp": 4
+      },
+      {
+        "alerts": 4,
+        "delays_ms": [
+          1100,
+          8700,
+          13000,
+          25000
+        ],
+        "fn": 0,
+        "fp": 0,
+        "scenario": "mixed",
+        "seed": 101,
+        "tn": 28,
+        "tp": 4
+      }
+    ],
+    "config": {
+      "beacon_cv": 0.1,
+      "beacon_intervals": 5,
+      "beacon_min_interval_ms": 1000,
+      "max_alerts": 256,
+      "max_hosts": 256,
+      "max_pairs_per_host": 32,
+      "max_recent_ids": 32768,
+      "rate_min": 30,
+      "rate_ratio": 4.0,
+      "retention_windows": 2,
+      "scan_hosts": 10,
+      "scan_ports": 12,
+      "transfer_bytes": 5000000,
+      "window_ms": 60000
+    },
+    "false_positive_rate": 0.007142857142857143,
+    "fn": 0,
+    "fp": 5,
+    "label": "default",
+    "median_delay_ms": 10850.0,
+    "peak_hosts": 8,
+    "peak_ids": 822,
+    "peak_pairs": 45,
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "static_rate_alert_windows": 440,
+    "tn": 695,
+    "total_alerts": 45,
+    "tp": 40
+  },
+  "queue": {
+    "accepted": 822,
+    "capacity": 64,
+    "elapsed_ms": 1122.013296,
+    "events": 822,
+    "passed": true,
+    "peak_observed": 64,
+    "producer_waits": 740
+  },
+  "resilience": [
+    {
+      "metrics": {
+        "accepted": 1,
+        "alerts_evicted": 0,
+        "alerts_total": 0,
+        "by_detector": {},
+        "bytes": 17092,
+        "capacity_dropped": 0,
+        "duplicates": 1,
+        "evicted_hosts": 0,
+        "evicted_ids": 0,
+        "invalid": 0,
+        "late": 1,
+        "pair_observations_dropped": 0,
+        "peak_hosts": 1,
+        "peak_ids": 1,
+        "peak_pairs": 1,
+        "received": 3
+      },
+      "name": "duplicate and late input",
+      "passed": true
+    },
+    {
+      "metrics": {
+        "accepted": 1,
+        "alerts_evicted": 0,
+        "alerts_total": 0,
+        "by_detector": {},
+        "bytes": 4087,
+        "capacity_dropped": 0,
+        "duplicates": 0,
+        "evicted_hosts": 0,
+        "evicted_ids": 0,
+        "invalid": 2,
+        "late": 0,
+        "pair_observations_dropped": 0,
+        "peak_hosts": 1,
+        "peak_ids": 1,
+        "peak_pairs": 1,
+        "received": 3
+      },
+      "name": "malformed and oversized recovery",
+      "passed": true
+    },
+    {
+      "name": "empty input",
+      "passed": true
+    },
+    {
+      "metrics": {
+        "accepted": 32,
+        "alerts_evicted": 0,
+        "alerts_total": 4,
+        "by_detector": {
+          "beacon": 4
+        },
+        "bytes": 967728,
+        "capacity_dropped": 968,
+        "duplicates": 0,
+        "evicted_hosts": 0,
+        "evicted_ids": 24,
+        "invalid": 0,
+        "late": 0,
+        "pair_observations_dropped": 0,
+        "peak_hosts": 4,
+        "peak_ids": 8,
+        "peak_pairs": 4,
+        "received": 1000
+      },
+      "name": "host and ID caps",
+      "passed": true
+    },
+    {
+      "metrics": {
+        "accepted": 20,
+        "alerts_evicted": 0,
+        "alerts_total": 1,
+        "by_detector": {
+          "scan": 1
+        },
+        "bytes": 517650,
+        "capacity_dropped": 0,
+        "duplicates": 0,
+        "evicted_hosts": 0,
+        "evicted_ids": 0,
+        "invalid": 0,
+        "late": 0,
+        "pair_observations_dropped": 19,
+        "peak_hosts": 1,
+        "peak_ids": 20,
+        "peak_pairs": 1,
+        "received": 20
+      },
+      "name": "pair cap",
+      "passed": true
+    }
+  ],
+  "schema_version": 1,
+  "thresholds": [
+    {
+      "adaptive_rate_alert_windows": 10,
+      "cases": [
+        {
+          "alerts": 5,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 13,
+          "tp": 0
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 13,
+          "tp": 0
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 13,
+          "tp": 0
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 13,
+          "tp": 0
+        },
+        {
+          "alerts": 6,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 12,
+          "tp": 0
+        },
+        {
+          "alerts": 6,
+          "delays_ms": [
+            500
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [
+            500
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [
+            500
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [
+            500
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [
+            500
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 6,
+          "delays_ms": [
+            4200
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [
+            4200
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [
+            4200
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [
+            4200
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [
+            4200
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [
+            0
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [
+            0
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [
+            0
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 11,
+          "delays_ms": [
+            0
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [
+            0
+          ],
+          "fn": 0,
+          "fp": 5,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 14,
+          "tp": 1
+        },
+        {
+          "alerts": 6,
+          "delays_ms": [
+            15000
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [
+            15000
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [
+            15000
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [
+            15000
+          ],
+          "fn": 0,
+          "fp": 3,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 16,
+          "tp": 1
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [
+            15000
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 15,
+          "tp": 1
+        },
+        {
+          "alerts": 6,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 9,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 8,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 7,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 5,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 15,
+          "tp": 0
+        },
+        {
+          "alerts": 10,
+          "delays_ms": [
+            500,
+            4200,
+            0,
+            15000
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 24,
+          "tp": 4
+        },
+        {
+          "alerts": 13,
+          "delays_ms": [
+            500,
+            4200,
+            0,
+            15000
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 24,
+          "tp": 4
+        },
+        {
+          "alerts": 12,
+          "delays_ms": [
+            500,
+            4200,
+            0,
+            15000
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 24,
+          "tp": 4
+        },
+        {
+          "alerts": 14,
+          "delays_ms": [
+            500,
+            4200,
+            0,
+            15000
+          ],
+          "fn": 0,
+          "fp": 4,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 24,
+          "tp": 4
+        },
+        {
+          "alerts": 11,
+          "delays_ms": [
+            500,
+            4200,
+            0,
+            15000
+          ],
+          "fn": 0,
+          "fp": 5,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 23,
+          "tp": 4
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.3,
+        "beacon_intervals": 3,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 15,
+        "rate_ratio": 2.0,
+        "retention_windows": 2,
+        "scan_hosts": 5,
+        "scan_ports": 6,
+        "transfer_bytes": 2000000,
+        "window_ms": 60000
+      },
+      "false_positive_rate": 0.18142857142857144,
+      "fn": 0,
+      "fp": 127,
+      "label": "sensitive",
+      "median_delay_ms": 2350.0,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "precision": 0.23952095808383234,
+      "recall": 1.0,
+      "static_rate_alert_windows": 440,
+      "tn": 573,
+      "total_alerts": 300,
+      "tp": 40
+    },
+    {
+      "adaptive_rate_alert_windows": 10,
+      "cases": [
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 28,
+          "tp": 4
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.1,
+        "beacon_intervals": 5,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 30,
+        "rate_ratio": 4.0,
+        "retention_windows": 2,
+        "scan_hosts": 10,
+        "scan_ports": 12,
+        "transfer_bytes": 5000000,
+        "window_ms": 60000
+      },
+      "false_positive_rate": 0.007142857142857143,
+      "fn": 0,
+      "fp": 5,
+      "label": "default",
+      "median_delay_ms": 10850.0,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "static_rate_alert_windows": 440,
+      "tn": 695,
+      "total_alerts": 45,
+      "tp": 40
+    },
+    {
+      "adaptive_rate_alert_windows": 0,
+      "cases": [
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 20,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 20,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 20,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 20,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 20,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 4,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 28,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 4,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 28,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 4,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 28,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 4,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 28,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 4,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 28,
+          "tp": 0
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.01,
+        "beacon_intervals": 8,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 100,
+        "rate_ratio": 8.0,
+        "retention_windows": 2,
+        "scan_hosts": 20,
+        "scan_ports": 40,
+        "transfer_bytes": 12000000,
+        "window_ms": 60000
+      },
+      "false_positive_rate": 0.0,
+      "fn": 40,
+      "fp": 0,
+      "label": "strict",
+      "median_delay_ms": null,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "precision": null,
+      "recall": 0.0,
+      "static_rate_alert_windows": 0,
+      "tn": 700,
+      "total_alerts": 0,
+      "tp": 0
+    }
+  ],
+  "windows": [
+    {
+      "adaptive_rate_alert_windows": 0,
+      "cases": [
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 15,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 2,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 18,
+          "tp": 1
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 1,
+          "fp": 1,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 18,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 2,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 18,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 2,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 18,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 2,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 2,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 18,
+          "tp": 0
+        },
+        {
+          "alerts": 3,
+          "delays_ms": [
+            1100,
+            13000,
+            25000
+          ],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 28,
+          "tp": 3
+        },
+        {
+          "alerts": 3,
+          "delays_ms": [
+            1100,
+            13000,
+            25000
+          ],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 28,
+          "tp": 3
+        },
+        {
+          "alerts": 3,
+          "delays_ms": [
+            1100,
+            13000,
+            25000
+          ],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 28,
+          "tp": 3
+        },
+        {
+          "alerts": 3,
+          "delays_ms": [
+            1100,
+            13000,
+            25000
+          ],
+          "fn": 1,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 28,
+          "tp": 3
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            13000,
+            25000
+          ],
+          "fn": 1,
+          "fp": 1,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 27,
+          "tp": 3
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.1,
+        "beacon_intervals": 5,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 30,
+        "rate_ratio": 4.0,
+        "retention_windows": 2,
+        "scan_hosts": 10,
+        "scan_ports": 12,
+        "transfer_bytes": 5000000,
+        "window_ms": 30000
+      },
+      "false_positive_rate": 0.017142857142857144,
+      "fn": 10,
+      "fp": 12,
+      "label": "30 seconds",
+      "median_delay_ms": 13000.0,
+      "peak_hosts": 8,
+      "peak_ids": 455,
+      "peak_pairs": 45,
+      "precision": 0.7142857142857143,
+      "recall": 0.75,
+      "static_rate_alert_windows": 860,
+      "tn": 688,
+      "total_alerts": 42,
+      "tp": 30
+    },
+    {
+      "adaptive_rate_alert_windows": 10,
+      "cases": [
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            8700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            8700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 28,
+          "tp": 4
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.1,
+        "beacon_intervals": 5,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 30,
+        "rate_ratio": 4.0,
+        "retention_windows": 2,
+        "scan_hosts": 10,
+        "scan_ports": 12,
+        "transfer_bytes": 5000000,
+        "window_ms": 60000
+      },
+      "false_positive_rate": 0.007142857142857143,
+      "fn": 0,
+      "fp": 5,
+      "label": "60 seconds",
+      "median_delay_ms": 10850.0,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "static_rate_alert_windows": 440,
+      "tn": 695,
+      "total_alerts": 45,
+      "tp": 40
+    },
+    {
+      "adaptive_rate_alert_windows": 10,
+      "cases": [
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 7,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 19,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 42,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 73,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 0,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "background",
+          "seed": 101,
+          "tn": 16,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            1100
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "scan",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            11700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            11700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            11700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            11700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            11700
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "spike",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            13000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "transfer",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 7,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 19,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 42,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 73,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "beacon",
+          "seed": 101,
+          "tn": 19,
+          "tp": 1
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 7,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 19,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 42,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 73,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 1,
+          "delays_ms": [],
+          "fn": 0,
+          "fp": 1,
+          "scenario": "scheduled",
+          "seed": 101,
+          "tn": 19,
+          "tp": 0
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            11700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 7,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            11700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 19,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            11700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 42,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            11700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 73,
+          "tn": 28,
+          "tp": 4
+        },
+        {
+          "alerts": 4,
+          "delays_ms": [
+            1100,
+            11700,
+            13000,
+            25000
+          ],
+          "fn": 0,
+          "fp": 0,
+          "scenario": "mixed",
+          "seed": 101,
+          "tn": 28,
+          "tp": 4
+        }
+      ],
+      "config": {
+        "beacon_cv": 0.1,
+        "beacon_intervals": 5,
+        "beacon_min_interval_ms": 1000,
+        "max_alerts": 256,
+        "max_hosts": 256,
+        "max_pairs_per_host": 32,
+        "max_recent_ids": 32768,
+        "rate_min": 30,
+        "rate_ratio": 4.0,
+        "retention_windows": 2,
+        "scan_hosts": 10,
+        "scan_ports": 12,
+        "transfer_bytes": 5000000,
+        "window_ms": 120000
+      },
+      "false_positive_rate": 0.007142857142857143,
+      "fn": 0,
+      "fp": 5,
+      "label": "120 seconds",
+      "median_delay_ms": 12350.0,
+      "peak_hosts": 8,
+      "peak_ids": 822,
+      "peak_pairs": 45,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "static_rate_alert_windows": 300,
+      "tn": 695,
+      "total_alerts": 45,
+      "tp": 40
+    }
+  ]
+}
