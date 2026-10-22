@@ -1,0 +1,24 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Node.js / React
+node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+
+# Local configuration
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
